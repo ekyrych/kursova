@@ -243,3 +243,9 @@ logs/
 # Завантажені дані (якщо є)
 downloads/
 temp/
+
+echo "data/" >> .gitignore
+echo "myenv/" >> .gitignore
+echo "models/**/*.h5" >> .gitignore
+echo "models/**/*.pkl" >> .gitignore
+echo "models/**/*.keras" >> .gitignore
