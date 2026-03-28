@@ -1,0 +1,84 @@
+{
+    "model_name": "Random Forest",
+    "train_time": "2026-03-27 14:58:59",
+    "random_seed": 42,
+    "validation_metrics": {
+        "logistic_regression": {
+            "accuracy": 0.6739737894957617,
+            "f1_score": 0.18724014388437504,
+            "roc_auc": 0.7326577971637547
+        },
+        "random_forest": {
+            "accuracy": 0.7014801878830293,
+            "f1_score": 0.20058366209361755,
+            "roc_auc": 0.7527197833891413
+        }
+    },
+    "test_metrics": {
+        "accuracy": 0.7023027690888386,
+        "f1_score": 0.20178912033950386,
+        "roc_auc": 0.7542638643269353
+    },
+    "cv_scores": {
+        "mean": 0.20069258070297216,
+        "std": 0.0007802983444575579,
+        "folds": [
+            0.20064542821679768,
+            0.20068548602520847,
+            0.2015489493983752,
+            0.19929477849074398,
+            0.20128826138373554
+        ]
+    },
+    "feature_importance": [
+        {
+            "feature": "repeat_ratio",
+            "importance": 0.2893237273613712
+        },
+        {
+            "feature": "diversity",
+            "importance": 0.21539090942025269
+        },
+        {
+            "feature": "length",
+            "importance": 0.19977413401021377
+        },
+        {
+            "feature": "unique_items",
+            "importance": 0.10617011462764182
+        },
+        {
+            "feature": "most_common",
+            "importance": 0.06575410247114788
+        },
+        {
+            "feature": "first_item",
+            "importance": 0.06379805671517065
+        },
+        {
+            "feature": "last_item",
+            "importance": 0.05978895539420209
+        }
+    ],
+    "best_model_params": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 10,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 5,
+        "min_samples_split": 10,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 100,
+        "n_jobs": -1,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+    }
+}

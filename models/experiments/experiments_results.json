@@ -1,0 +1,39 @@
+{
+    "timestamp": "2026-03-28 14:22:52",
+    "best_model": "GRU",
+    "best_model_metrics": {
+        "test_auc": 0.7851538445657679,
+        "test_f1": 0.0,
+        "test_accuracy": 0.9449057990860997
+    },
+    "all_models": [
+        {
+            "name": "LSTM (Baseline)",
+            "test_auc": 0.7829367301244194,
+            "test_f1": 0.00310445580715851,
+            "test_accuracy": 0.9449166102085826,
+            "best_val_auc": 0.7816199064254761
+        },
+        {
+            "name": "GRU",
+            "test_auc": 0.7851538445657679,
+            "test_f1": 0.0,
+            "test_accuracy": 0.9449057990860997,
+            "best_val_auc": 0.7840831279754639
+        },
+        {
+            "name": "Bidirectional LSTM",
+            "test_auc": 0.7842089294247404,
+            "test_f1": 0.002115379593115876,
+            "test_accuracy": 0.9449209346575758,
+            "best_val_auc": 0.7829080820083618
+        },
+        {
+            "name": "Stacked LSTM (2 layers)",
+            "test_auc": 0.7837395331988645,
+            "test_f1": 0.0,
+            "test_accuracy": 0.9449057990860997,
+            "best_val_auc": 0.7827988862991333
+        }
+    ]
+}
