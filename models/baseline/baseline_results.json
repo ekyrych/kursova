@@ -1,63 +1,63 @@
 {
     "model_name": "Random Forest",
-    "train_time": "2026-03-27 14:58:59",
+    "train_time": "2026-04-01 17:39:45",
     "random_seed": 42,
     "validation_metrics": {
         "logistic_regression": {
-            "accuracy": 0.6739737894957617,
-            "f1_score": 0.18724014388437504,
-            "roc_auc": 0.7326577971637547
+            "accuracy": 0.6817433884532804,
+            "f1_score": 0.18815383540538255,
+            "roc_auc": 0.7327985588394254
         },
         "random_forest": {
-            "accuracy": 0.7014801878830293,
-            "f1_score": 0.20058366209361755,
-            "roc_auc": 0.7527197833891413
+            "accuracy": 0.6999435658999653,
+            "f1_score": 0.20023206402508137,
+            "roc_auc": 0.7520203893467053
         }
     },
     "test_metrics": {
-        "accuracy": 0.7023027690888386,
-        "f1_score": 0.20178912033950386,
-        "roc_auc": 0.7542638643269353
+        "accuracy": 0.7006803799749182,
+        "f1_score": 0.20138226516107197,
+        "roc_auc": 0.7534858555800823
     },
     "cv_scores": {
-        "mean": 0.20069258070297216,
-        "std": 0.0007802983444575579,
+        "mean": 0.20076474740604264,
+        "std": 0.0004730112343732086,
         "folds": [
-            0.20064542821679768,
-            0.20068548602520847,
-            0.2015489493983752,
-            0.19929477849074398,
-            0.20128826138373554
+            0.20073689589328456,
+            0.2003629004117524,
+            0.20127498000777075,
+            0.20013589678453336,
+            0.20131306393287224
         ]
     },
     "feature_importance": [
         {
+            "feature": "length",
+            "importance": 0.24189567430061337
+        },
+        {
             "feature": "repeat_ratio",
-            "importance": 0.2893237273613712
+            "importance": 0.23216202763895472
         },
         {
             "feature": "diversity",
-            "importance": 0.21539090942025269
-        },
-        {
-            "feature": "length",
-            "importance": 0.19977413401021377
+            "importance": 0.1990147830657585
         },
         {
             "feature": "unique_items",
-            "importance": 0.10617011462764182
+            "importance": 0.12399176570780704
         },
         {
             "feature": "most_common",
-            "importance": 0.06575410247114788
+            "importance": 0.07522145801934502
         },
         {
             "feature": "first_item",
-            "importance": 0.06379805671517065
+            "importance": 0.06399828818675905
         },
         {
             "feature": "last_item",
-            "importance": 0.05978895539420209
+            "importance": 0.06371600308076232
         }
     ],
     "best_model_params": {

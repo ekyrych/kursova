@@ -206,46 +206,33 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# ===== ВЕЛИКІ ПАПКИ ПРОЕКТУ (НЕ ПУШИТИ!) =====
-# Віртуальне середовище (2 GB)
+# Дані Yoochoose (великий датасет)
+data/yoochoose/
+yoochoose/
+**/yoochoose/
+
+# Віртуальне середовище Python
 myenv/
-venv/
-env/
+**/myenv/
 .venv/
+venv/
 
-# Дані Yoochoose (6.35 GB)
-data/yoochoose/*.dat
-data/yoochoose/*.npy
-data/yoochoose/*.csv
-data/yoochoose/*.pkl
-data/yoochoose/session_features.csv
-data/yoochoose/session_labels.csv
+*.npy
+*.npz
+*.h5
+*.pkl
+*.joblib
+*.parquet
 
-# Моделі (великі файли)
-models/**/*.h5
-models/**/*.keras
-models/**/*.tflite
-models/**/*.pkl
-!models/**/*.json   # Зберігаємо тільки JSON файли з результатами
-
-# Локальні налаштування
-.vscode/
-.idea/
-
-# Ноутбуки (тимчасові файли)
-.ipynb_checkpoints/
-*.ipynb_checkpoints
-
-# Логи
-logs/
 *.log
+*.tmp
+*.temp
 
-# Завантажені дані (якщо є)
-downloads/
-temp/
+*.h5
+*.keras
+*.pb
+*.onnx
 
-echo "data/" >> .gitignore
-echo "myenv/" >> .gitignore
-echo "models/**/*.h5" >> .gitignore
-echo "models/**/*.pkl" >> .gitignore
-echo "models/**/*.keras" >> .gitignore
+**/data/**/*.csv
+**/data/**/*.npy
+**/data/**/*.npz

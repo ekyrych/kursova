@@ -15,7 +15,7 @@ for dir_path in [DATA_DIR, MODELS_DIR, FIGURES_DIR, REPORTS_DIR]:
     dir_path.mkdir(parents=True, exist_ok=True)  # exist_ok=True дозволяє пропустити якщо папка вже є
 
 # Параметри даних
-MAX_SEQUENCE_LENGTH = 50  # максимальна довжина сесії
+MAX_SEQUENCE_LENGTH = 9  # максимальна довжина сесії
 MIN_SEQUENCE_LENGTH = 2    # мінімальна довжина сесії
 EMBEDDING_DIM = 50         # розмір ембеддінгів
 

@@ -1,39 +1,46 @@
 {
-    "timestamp": "2026-03-28 14:22:52",
-    "best_model": "GRU",
+    "timestamp": "2026-04-04 00:29:57",
+    "best_model": "Bidirectional LSTM",
     "best_model_metrics": {
-        "test_auc": 0.7851538445657679,
-        "test_f1": 0.0,
-        "test_accuracy": 0.9449057990860997
+        "test_auc": 0.7836128581994435,
+        "test_f1": 0.22290574234147306,
+        "test_accuracy": 0.734146569991207
     },
     "all_models": [
         {
             "name": "LSTM (Baseline)",
-            "test_auc": 0.7829367301244194,
-            "test_f1": 0.00310445580715851,
-            "test_accuracy": 0.9449166102085826,
-            "best_val_auc": 0.7816199064254761
+            "test_auc": 0.7821687298190289,
+            "test_f1": 0.220979190478479,
+            "test_accuracy": 0.7312909921727473,
+            "best_val_auc": 0.7818423509597778
         },
         {
             "name": "GRU",
-            "test_auc": 0.7851538445657679,
-            "test_f1": 0.0,
-            "test_accuracy": 0.9449057990860997,
-            "best_val_auc": 0.7840831279754639
+            "test_auc": 0.7815729650380274,
+            "test_f1": 0.22388133818401648,
+            "test_accuracy": 0.7409143326654463,
+            "best_val_auc": 0.7813498377799988
         },
         {
             "name": "Bidirectional LSTM",
-            "test_auc": 0.7842089294247404,
-            "test_f1": 0.002115379593115876,
-            "test_accuracy": 0.9449209346575758,
-            "best_val_auc": 0.7829080820083618
+            "test_auc": 0.7836128581994435,
+            "test_f1": 0.22290574234147306,
+            "test_accuracy": 0.734146569991207,
+            "best_val_auc": 0.7831188440322876
         },
         {
             "name": "Stacked LSTM (2 layers)",
-            "test_auc": 0.7837395331988645,
-            "test_f1": 0.0,
-            "test_accuracy": 0.9449057990860997,
-            "best_val_auc": 0.7827988862991333
+            "test_auc": 0.7813850101301598,
+            "test_f1": 0.2171754541381764,
+            "test_accuracy": 0.7216748590950369,
+            "best_val_auc": 0.7812286019325256
         }
-    ]
+    ],
+    "baseline": {
+        "model": "Random Forest",
+        "test_auc": 0.7534858555800823,
+        "test_f1": 0.20138226516107197,
+        "test_accuracy": 0.7006803799749182
+    },
+    "improvement_vs_baseline": 3.998350121140292
 }
